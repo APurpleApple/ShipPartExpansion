@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>APurpleApple.ShipPartExpansion</RootNamespace>
+        <Version>0.1.0</Version>
+		<IsLegacyMod>false</IsLegacyMod>
+        <IncludedModProjectPaths>i18n;assets</IncludedModProjectPaths>
+        <TargetFramework>net8.0</TargetFramework>
+        <ModZipPath>$(MSBuildProjectDirectory)\.release\$(MSBuildProjectName)-$(Version).zip</ModZipPath>
+        <LangVersion>12.0</LangVersion>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" PrivateAssets="All" ExcludeAssets="All" />
+        <PackageReference Include="Nickel.ModBuildConfig" Version="1.1.0" />
+        <PackageReference Include="Nanoray.ExtractSingleFileApplicationResourceTask" Version="1.0.0" PrivateAssets="All" ExcludeAssets="runtime" />
+        <PackageReference Include="MakeTypesPublic" Version="1.0.3" PrivateAssets="All" ExcludeAssets="runtime" />
+        <PackageReference Include="EnumByNameSourceGenerator" Version="1.1.1" PrivateAssets="All" ExcludeAssets="runtime" />
+        <PackageReference Include="Pintail" Version="2.5.0" />
+        <None Include="$(MSBuildProjectDirectory)\..\.editorconfig" Link=".editorconfig" />
+        <None Remove="$(MSBuildProjectDirectory)\.release\**" />
+    </ItemGroup>
+	<ItemGroup>
+		<Content Include="Sprites\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Interfaces\" />
+	  <Folder Include="Sprites\Artifacts\" />
+	  <Folder Include="Sprites\Cards\" />
+	  <Folder Include="Sprites\Icons\" />
+	  <Folder Include="Sprites\UI\" />
+	</ItemGroup>
+</Project>

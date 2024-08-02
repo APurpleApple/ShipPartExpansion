@@ -1,0 +1,13 @@
+{
+  "UniqueName": "APurpleApple.ShipPartExpansion",
+  "Version": "0.1.0",
+  "RequiredApiVersion": "0.1.0",
+  "EntryPointAssembly": "ShipPartExpansion.dll",
+
+  "UpdateChecks": {
+
+  },
+  "Dependencies": [
+
+  ]
+}

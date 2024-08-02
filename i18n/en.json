@@ -1,0 +1,178 @@
+{
+  "artifact": {
+    "Artifact_Selene": {
+      "name": "CONSTRUCTOR DRONE",
+      "description": "An invicible constructor drone follows you around, moving along with midrow."
+    },
+    "Artifact_SeleneV2": {
+      "name": "ARMS RACE",
+      "description": "Mount a cannon onto the constructor drone, shooting for 1 damage every time you attack. Beware of friendly fire!\n "
+    }
+  },
+  "action": {
+    "AttachPart": {
+      "name": "ATTACH PART",
+      "description": "Attach a part to your ship at the CONSTRUCTOR DRONE's location."
+    },
+    "RecyclePart": {
+      "name": "RECYCLE PART",
+      "description": "Destroy a TEMP part at the CONSTRUCTOR DRONE's location.",
+      "condition": "the CONSTRUCTOR DRONE is aligned with a TEMP part"
+    },
+    "WeldPart": {
+      "name": "WELD PART",
+      "description": "Modify a part at the CONSTRUCTOR DRONE's location."
+    },
+    "Align": {
+      "name": "    ALIGN",
+      "description": "Bring the CONSTRUCTOR DRONE to your cockpit."
+    },
+    "MagPull": {
+      "name": "    PULL MIDROW",
+      "description": "PULL all midrow objects toward your cockpit."
+    },
+    "MagPush": {
+      "name": "    PUSH MIDROW",
+      "description": "PUSH all midrow objects away from your cockpit."
+    }
+  },
+  "status": {
+    "Reinforce": {
+      "name": "REINFORCED",
+      "description": "The next time a part should be destroyed because of Single Use, it isn't."
+    }
+  },
+  "partTrait": {
+    "SingleUse": {
+      "name": "SINGLE USE",
+      "description": "This part is destroyed after activating once."
+    },
+    "Breakable": {
+      "name": "BREAKABLE",
+      "description": "This part is destroyed after being hit."
+    },
+    "Temp": {
+      "name": "TEMPORARY",
+      "description": "This part is removed after combat."
+    }
+  },
+  "parts": {
+    "Cannon": {
+      "name": "CANNON",
+      "description": ""
+    },
+    "Bay": {
+      "name": "MISSILE BAY",
+      "description": ""
+    },
+    "Scaffolding": {
+      "name": "WEAK SCAFFOLDING",
+      "description": "This part is destroyed when you move."
+    },
+    "Shield": {
+      "name": "SHIELD",
+      "description": "This and adjacent parts take 1 less damage from attacks."
+    },
+    "ShieldV2": {
+      "name": "SHIELD V2",
+      "description": "This and adjacent parts take 2 less damage from attacks."
+    },
+    "Cloak": {
+      "name": "CLOAKING",
+      "description": "On turn start, create 1 <c=card>Activate Cloaking</c> in hand if you don't already have one."
+    },
+    "ThrusterRight": {
+      "name": "THRUSTER",
+      "description": "On turn end, pushes the ship 1 spaces to the left."
+    },
+    "ThrusterV2Right": {
+      "name": "THRUSTER V2",
+      "description": "On turn end, pushes the ship 2 spaces to the left."
+    },
+    "ThrusterLeft": {
+      "name": "THRUSTER",
+      "description": "On turn end, pushes the ship 1 space to the right."
+    },
+    "ThrusterV2Left": {
+      "name": "THRUSTER V2",
+      "description": "On turn end, pushes the ship 2 spaces to the right."
+    },
+    "Bubble": {
+      "name": "BUBBLE BAY",
+      "description": "Whenever a midrow object passes in front of this, it gets bubbled."
+    }
+  },
+  "tooltips": {
+  },
+  "characters": {
+    "Selene": {
+      "name": "Selene",
+      "description": "SELENE\nA ship builder"
+    }
+  },
+  "card": {
+    "AttachCannon": {
+      "name": "CANNON"
+    },
+    "AttachScaffolding": {
+      "name": "SCAFFOLDING"
+    },
+    "AttachBay": {
+      "name": "BAY"
+    },
+    "AttachShield": {
+      "name": "SHIELD"
+    },
+    "AttachThruster": {
+      "name": "THRUSTER"
+    },
+    "AttachCloak": {
+      "name": "CLOAKING"
+    },
+    "AttachBubble": {
+      "name": "BUBBLE BAY"
+    },
+    "ActivateCloak": {
+      "name": "Activate Cloaking",
+      "description": "Cloaking Device and adjacent parts become EMPTY until next turn.",
+      "descriptionB": "Your entire ship becomes EMPTY until next turn."
+    },
+    "Align": {
+      "name": "Align"
+    },
+    "Magnetize": {
+      "name": "Magnetize",
+      "push": "PUSH all midrow objects away from your cockpit.",
+      "pull": "PULL all midrow objects toward your cockpit."
+    },
+    "Shuffle": {
+      "name": "Shuffle!",
+      "description": "Shuffle your ship.",
+      "descriptionEnemy": "Shuffle the enemy ship."
+    },
+    "EjectAll": {
+      "name": "Disassembly",
+      "description": "Eject all your temporary parts, dealing 2 damage per hit.",
+      "descriptionB": "Eject all your temporary parts, dealing 3 damage per hit."
+    },
+    "Weld": {
+      "name": "Weld",
+      "description": "Remove Single Use from a part.",
+      "descriptionA": "Remove Temporary and Single Use from a part.",
+      "descriptionB": "Remove Temporary, Single Use, and Breakable from a part."
+    },
+    "Reinforce": {
+      "name": "Reinforce"
+    },
+    "Recycle": {
+      "name": "Recycle"
+    },
+    "Delivery": {
+      "name": "Delivery"
+    },
+    "RandomAttach": {
+      "name": "???",
+      "description": "A random ATTACH card."
+    }
+  }
+}
