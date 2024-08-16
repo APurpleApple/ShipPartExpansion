@@ -5,9 +5,11 @@
   "EntryPointAssembly": "ShipPartExpansion.dll",
 
   "UpdateChecks": {
-
+    "NexusMods": {
+      "ID": 33
+    }
   },
   "Dependencies": [
-
+    
   ]
 }
