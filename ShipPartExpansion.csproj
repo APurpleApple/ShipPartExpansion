@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <RootNamespace>APurpleApple.ShipPartExpansion</RootNamespace>
-        <Version>0.1.0</Version>
+        <Version>0.2.0</Version>
 		<IsLegacyMod>false</IsLegacyMod>
         <IncludedModProjectPaths>i18n;assets</IncludedModProjectPaths>
         <TargetFramework>net8.0</TargetFramework>

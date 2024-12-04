@@ -68,6 +68,13 @@ public sealed class PMod : SimpleMod
             new CurrentLocaleOrEnglishLocalizationProvider<IReadOnlyList<string>>(this.AnyLocalizations)
         );
 
+        glossaries.Add("Temp", new CustomTTGlossary(
+            CustomTTGlossary.GlossaryType.parttrait,
+            () => SSpr.icons_temporary,
+            () => Localizations.Localize(["partTrait", "Temp", "name"]),
+            () => Localizations.Localize(["partTrait", "Temp", "description"])
+            ));
+
         Patch();
 
         helper.Events.OnModLoadPhaseFinished += (object? sender, ModLoadPhase e) => {

@@ -9,7 +9,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace APurpleApple.ShipPartExpansion
 {
@@ -99,7 +98,7 @@ namespace APurpleApple.ShipPartExpansion
 
             if (part.hilight && g.state.route is Combat combat && combat.PlayerCanAct(g.state))
             {
-                Spr? id = Spr.parts_hilight;
+                Spr? id = SSpr.parts_hilight;
                 double num2 = (int)vec3.x - 1;
                 double y = (int)vec3.y - 1;
                 bool flag = !ship.isPlayerShip;
@@ -111,7 +110,7 @@ namespace APurpleApple.ShipPartExpansion
 
             if (part.hilightToggle && g.state.route is Combat combat2 && combat2.PlayerCanAct(g.state))
             {
-                Spr? id2 = (part.active ? Spr.parts_hilight_toggle_off : Spr.parts_hilight_toggle_on);
+                Spr? id2 = (part.active ? SSpr.parts_hilight_toggle_off : SSpr.parts_hilight_toggle_on);
                 double num3 = (int)vec3.x - 1;
                 double y2 = (int)vec3.y - 1;
                 bool flag = !ship.isPlayerShip;
@@ -130,7 +129,7 @@ namespace APurpleApple.ShipPartExpansion
             }
 
             Vec vec4 = vec3 + new Vec(-1.0, -1.0 + (double)(ship.isPlayerShip ? 6 : (-6)) * part.pulse).round();
-            if (spr == Spr.parts_cannon_drill)
+            if (spr == SSpr.parts_cannon_drill)
             {
                 spr = Ship.drillSprites.GetModulo((int)(g.state.time * 12.0));
             }
